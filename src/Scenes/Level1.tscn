@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Fan.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Spike.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Banana.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Strawberry.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Finish.tscn" type="PackedScene" id=8]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 48, 481 )
+
+[node name="TileMap" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 393215, 5, 0, 327712, 3, 0, 458751, 5, 0, 393248, 3, 0, 524287, 5, 0, 458784, 3, 0, 589823, 5, 0, 524320, 3, 0, 655359, 5, 0, 589856, 3, 0, 720895, 5, 0, 655392, 3, 0, 786431, 5, 0, 720928, 3, 0, 851967, 5, 0, 786464, 3, 0, 917503, 5, 0, 852000, 3, 0, 983039, 5, 0, 917536, 3, 0, 1048575, 5, 0, 983072, 3, 0, 1048576, 1, 0, 1048577, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1048600, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 1, 0, 1048604, 1, 0, 1048605, 1, 0, 1048606, 1, 0, 1048607, 1, 0, 1114112, 4, 0, 1114113, 4, 0, 1114114, 4, 0, 1114115, 4, 0, 1114116, 4, 0, 1114117, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114138, 4, 0, 1114139, 4, 0, 1114140, 4, 0, 1114141, 4, 0, 1114142, 4, 0, 1114143, 4, 0, 1179648, 4, 0, 1179649, 4, 0, 1179650, 4, 0, 1179651, 4, 0, 1179652, 4, 0, 1179653, 4, 0, 1179654, 4, 0, 1179655, 4, 0, 1179656, 4, 0, 1179657, 4, 0, 1179658, 4, 0, 1179659, 4, 0, 1179660, 4, 0, 1179661, 4, 0, 1179662, 4, 0, 1179663, 4, 0, 1179664, 4, 0, 1179665, 4, 0, 1179666, 4, 0, 1179667, 4, 0, 1179668, 4, 0, 1179669, 4, 0, 1179670, 4, 0, 1179671, 4, 0, 1179672, 4, 0, 1179673, 4, 0, 1179674, 4, 0, 1179675, 4, 0, 1179676, 4, 0, 1179677, 4, 0, 1179678, 4, 0, 1179679, 4, 0 )
+
+[node name="Fans" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Fans" instance=ExtResource( 3 )]
+position = Vector2( 232, 504 )
+
+[node name="Area2D2" parent="Fans" instance=ExtResource( 3 )]
+position = Vector2( 280, 504 )
+
+[node name="Area2D3" parent="Fans" instance=ExtResource( 3 )]
+position = Vector2( 520, 504 )
+
+[node name="Area2D4" parent="Fans" instance=ExtResource( 3 )]
+position = Vector2( 568, 504 )
+
+[node name="Area2D5" parent="Fans" instance=ExtResource( 3 )]
+position = Vector2( 784, 504 )
+
+[node name="Area2D6" parent="Fans" instance=ExtResource( 3 )]
+position = Vector2( 832, 504 )
+
+[node name="Spikes" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 872, 496 )
+
+[node name="Area2D6" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 744, 496 )
+
+[node name="Area2D7" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 744, 496 )
+
+[node name="Area2D2" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 320, 496 )
+
+[node name="Area2D4" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 192, 496 )
+
+[node name="Area2D3" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 608, 496 )
+
+[node name="Area2D5" parent="Spikes" instance=ExtResource( 4 )]
+position = Vector2( 480, 496 )
+
+[node name="Bananas" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Bananas" instance=ExtResource( 5 )]
+position = Vector2( 240, 422 )
+
+[node name="Area2D2" parent="Bananas" instance=ExtResource( 5 )]
+position = Vector2( 280, 422 )
+
+[node name="Area2D3" parent="Bananas" instance=ExtResource( 5 )]
+position = Vector2( 400, 424 )
+
+[node name="Area2D4" parent="Bananas" instance=ExtResource( 5 )]
+position = Vector2( 680, 424 )
+
+[node name="Area2D7" parent="Bananas" instance=ExtResource( 5 )]
+position = Vector2( 792, 424 )
+
+[node name="Area2D8" parent="Bananas" instance=ExtResource( 5 )]
+position = Vector2( 832, 424 )
+
+[node name="Control" parent="." instance=ExtResource( 6 )]
+
+[node name="Strawberries" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Strawberries" instance=ExtResource( 7 )]
+position = Vector2( 520, 424 )
+
+[node name="Area2D2" parent="Strawberries" instance=ExtResource( 7 )]
+position = Vector2( 552, 424 )
+
+[node name="Area2D3" parent="Strawberries" instance=ExtResource( 7 )]
+position = Vector2( 584, 424 )
+
+[node name="Finish" parent="." instance=ExtResource( 8 )]
+position = Vector2( 976, 472 )
+world_scene = "res://Scenes/Level2.tscn"
